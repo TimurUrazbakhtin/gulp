@@ -96,7 +96,7 @@ export const server = () => {
 
 // Watch
 export const watch = () => {
-    gulp.watch('src/*.html', gulp.series(html));
+    gulp.watch('src/**/*.html', gulp.series(html));
     gulp.watch('src/styles/**/*.css', gulp.series(stylesComponents, stylesLibs));
     gulp.watch('src/scripts/**/*.js', gulp.series(scriptsComponents, scriptsLibs));
     gulp.watch([
