@@ -86,6 +86,7 @@ export const copy = () => {
 // Server
 export const server = () => {
     sync.init({
+        open: false,
         ui: false,
         notify: false,
         server: {
